@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="tabs">
+        <button class="tablinks" onclick="tabs(event, 'inch')">inch to feet and inch</button>
+        <button class="tablinks" onclick="tabs(event, 'feet')">feet to inch</button>
+        <button class="tablinks" onclick="tabs(event, 'angle')">angle calculator</button>
+    </div>
+    <div>
+        <div id="inch" class="tab-content">
+            <label for="">How many inches?</label>
+            <input type="text" placeholder="inches">
+            <h1></h1>
+        </div>
+        <div id="feet" class="tab-content">
+            <label for="">how many feet?</label>
+            <input type="text" placeholder="feet">
+            <label for="">inches</label>
+            <input type="text" placeholder="inches">
+            <h1></h1>
+        </div>
+        <div id="angle" class="tab-content">
+            <label for="">adjacent side</label>
+            <input type="text" placeholder="adjacent side">
+            <label for="">opposite side</label>
+            <input type="text" placeholder="opposite side">
+            <h1></h1>
+        </div>
+    </div>
+</body>
+</html>
