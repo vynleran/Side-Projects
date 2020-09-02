@@ -8,30 +8,36 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div id="tabs">
-        <button class="tablinks" onclick="tabs(event, 'inch')">inch to feet and inch</button>
-        <button class="tablinks" onclick="tabs(event, 'feet')">feet to inch</button>
-        <button class="tablinks" onclick="tabs(event, 'angle')">angle calculator</button>
-    </div>
-    <div>
-        <div id="inch" class="tab-content">
-            <label for="">How many inches?</label>
-            <input type="text" placeholder="inches">
-            <h1></h1>
+    <div id="container">
+        <div id="tabs">
+            <button class="tablinks" onclick="tabs(event, 'inch')">inch to feet and inch</button>
+            <button class="tablinks" onclick="tabs(event, 'feet')">feet to inch</button>
+            <button class="tablinks" onclick="tabs(event, 'angle')">angle calculator</button>
         </div>
-        <div id="feet" class="tab-content">
-            <label for="">how many feet?</label>
-            <input type="text" placeholder="feet">
-            <label for="">inches</label>
-            <input type="text" placeholder="inches">
-            <h1></h1>
-        </div>
-        <div id="angle" class="tab-content">
-            <label for="">adjacent side</label>
-            <input type="text" placeholder="adjacent side">
-            <label for="">opposite side</label>
-            <input type="text" placeholder="opposite side">
-            <h1></h1>
+
+        <div id="tab-contents">
+            <div id="inch" class="tab-content">
+                <label for="">How many inches?</label>
+                <input type="text" placeholder="inches" id="input-inch">
+                <button id="submit-inch" onclick="inch()">Convert</button>
+                <h1 id="result-inch"></h1>
+            </div>
+            <div id="feet" class="tab-content">
+                <label for="">how many feet?</label>
+                <input type="text" placeholder="feet" id="input-feet">
+                <label for="">inches</label>
+                <input type="text" placeholder="inches" id="input-feet-inch">
+                <button id="submit-inch" onclick="feet()">Convert</button>
+                <h1 id="result-feet"></h1>
+            </div>
+            <div id="angle" class="tab-content">
+                <label for="">adjacent side</label>
+                <input type="text" placeholder="adjacent side" id="side-adj">
+                <label for="">opposite side</label>
+                <input type="text" placeholder="opposite side" id="side-opp">
+                <button onclick="angle()">Calculate</button>
+                <h1 id="result-angle"></h1>
+            </div>
         </div>
     </div>
 </body>
