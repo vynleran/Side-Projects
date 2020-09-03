@@ -1,19 +1,25 @@
 
-// // Builds the tabs for the conversion that take place in each one 
-// function tabs(evt, math) {
-//     var i, tabLinks, tabContent;
-//     tabContent = document.getElementsByClassName("tab-content")   // the content to each tab
-//     for(i = 0; i < tabContent.length; i++) {      // all of the elements with tab-content class
-//         tabContent[i].style.display = "none";
-//     }
-//     tabLinks = document.getElementsByClassName("tablinks");       // The links/buttons to each tab
-//     for(i = 0; i < tabLinks.length; i++) {        // all of the elements with tablinks class
-//         tabLinks[i].className = tabLinks[i].className.replace(" active", "");
-//     }
-//     document.getElementById(math).style.display = "block";        // Making the current link content visiable
-//     evt.currentTarget.className += " active";     // Changing the current link button color
+// Builds the tabs for the conversion that take place in each one 
+function tabs(evt, math) {
+    var i, tabLinks, tabContent;
+    tabContent = document.getElementsByClassName("tab-content")   // the content to each tab
+    for(i = 0; i < tabContent.length; i++) {      // all of the elements with tab-content class
+        tabContent[i].style.display = "none";
+    }
+    tabLinks = document.getElementsByClassName("tablinks");       // The links/buttons to each tab
+    for(i = 0; i < tabLinks.length; i++) {        // all of the elements with tablinks class
+        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+    }
+    document.getElementById(math).style.display = "block";        // Making the current link content visiable
+    evt.currentTarget.className += " active";     // Changing the current link button color
 
-// }
+}
+
+// Deleting the input they have entered
+function clear() {
+    let inputs = document.getElementsByClassName("inputs");
+    let results = document.getElementsByClassName("results");
+}
 
 // calculating inches to feet and inches
 function inch () {

@@ -8,12 +8,14 @@
 body {
   display: flex;
   flex-direction: column;
+  background: #14171d;
+  color: white;
 }
 
 #container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
   justify-content: center;
   margin: auto;
   margin-top: 10%;
@@ -22,10 +24,10 @@ body {
 /* Style the tab */
 #tabs {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: 2px solid #56c9aa;
+  background-color: #14171d;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 /* Style the buttons inside the tab */
@@ -35,26 +37,57 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 14px 40px;
   transition: 0.3s;
   font-size: 17px;
+  color: white;
 }
 
 /* Change background color of buttons on hover */
 .tablinks:hover {
-  background-color: #ddd;
+  background-color: #56c970;
 }
 
 /* Create an active/current tablink class */
 .tablinks.active {
-  background-color: #ccc;
+  background-color: #56c9aa;
 }
 
 /* Style the tab content */
 .tab-content {
   display: block;
   padding: 6px 12px;
-  border: 1px solid #ccc;
+  border: 2px solid #56c9aa;
   border-top: none;
 }
 
+.inputs {
+  padding: 6px 12px;
+  color: white;
+}
+
+.inputs[type="text"] {
+  border: 1px solid #56c9aa;
+  background: #14171d;
+}
+
+.inputs[type="text"]::placeholder {
+  color: #56c9aa;
+}
+
+.labels {
+  padding: 6px 12px;
+}
+
+.buttons {
+  padding: 6px 12px;
+  border: 1px solid #56c9aa;
+  background: #56c9aa;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.buttons:hover {
+  border: 1px solid #56c970;
+  background: #56c970;
+}
